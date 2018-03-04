@@ -1,0 +1,23 @@
+
+/* Make the background the image */
+.container-page {
+    background: url ('http://chir.ag/res/center/preztags.jpg');
+    width: 100%;
+    opacity: 50%;
+}
+.display-4 {
+    color: blue;
+}
+
+.initially-hidden-block {
+    display: none;
+}
+
+.jumbotron-fluid {
+    background-color: #999999;
+    opacity: 10%;
+}
+
+.start-playing-button {
+    align-content: center;
+}
