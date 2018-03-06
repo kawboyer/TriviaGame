@@ -15,7 +15,7 @@
 <body>
     <div class="container-page">
 
-    
+
         <div class="jumbotron-fluid background-image span">
             <div class="container-fluid">
                 <h1 class="display-4">Presidential Trivia</h1>
@@ -23,133 +23,199 @@
                 <hr class="my-4">
                 <p></p>
                 <p class="lead">
-                    <a class="btn btn-secondary btn-lg start-playing-button show-hidden-block" href="#" role="button">Start Playing!</a>
+                    <button type="button" class="btn btn-primary show-hidden-block start-game-button">Start Playing!</button>
                 </p>
 
-                
                 <!-- INITIALLY HIDDEN BLOCK -->
-                <div class="remaining-time"></div>
-                <br>
-                <form class="trivia-form initially-hidden-block" value="initiallyHiddenBlock">
-                    <div class="question1">1. What is Bill Clinton’s middle name?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">a. Washington</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">b. Franklin</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2"><strong>c. Jefferson</strong></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2">d. Adams</label>
-                    </div>
+                <div class="initially-hidden-block" value="initiallyHiddenBlock">
+                    <div><span class="timer"></span></div>
                     <br>
                     <br>
-                    <div class="question1">2. Whom of the following was not a US President?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">a. Franklin Pierce</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">b. Benjamin Franklin</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2"><strong>c. Benjamin Harrison</strong></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2">d. William Henry Harrison</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="question1">3. Who is the only US President never to be elected President, nor Vice President?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">a. Gerald Ford</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2"><strong>b. Richard Nixon</strong></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2">c. Andrew Johnson</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2">d. Andrew Jackson</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="question1">4. To what prestigious job was President William Howard Taft appointed, after his one term as President?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">a. Attorney General of the US</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">b. Postmaster General of the US</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2">c. National Dog Catcher of the US</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2"><strong>d. Chief Justice of the Supreme Court</strong></label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="question1">5. What is the most common first name of all 45 US Presidents?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1"><strong>a. James</strong></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">b. William</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2">c. Donald</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2">d. George</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="question1">6. Which US President was the youngest at the time of his inauguration?</div> 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">a. George Washington</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">b. William McKinley</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox2"><strong>c. Theodore Roosevelt</strong></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox2">d. Ulysses S. Grant</label>
-                    </div>
+                    <form class="trivia-form">
+                        <div class="question1">1. What is Bill Clinton’s middle name?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" value="option1">
+                            <label class="form-check-label question1" for="inlineCheckbox1">Washington</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" value="option2">
+                            <label class="form-check-label question1" for="inlineCheckbox2">Franklin</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" value="option3">
+                            <label class="form-check-label question1 question1-correct-answer" for="inlineCheckbox3">
+                                <strong>Jefferson</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" value="option4">
+                            <label class="form-check-label question1" for="inlineCheckbox4">Adams</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">2. Whom of the following was not a US President?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" value="option1">
+                            <label class="form-check-label question2" for="inlineCheckbox1">Franklin Pierce</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" value="option2">
+                            <label class="form-check-label question2" for="inlineCheckbox2">b. Benjamin Franklin</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" value="option3">
+                            <label class="form-check-label question2 question2-correct-answer" for="inlineCheckbox2">
+                                <strong>c. Benjamin Harrison</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" value="option4">
+                            <label class="form-check-label question2" for="inlineCheckbox2">d. William Henry Harrison</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">3. Who is the only US President never to be elected President, nor Vice President?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" value="option1">
+                            <label class="form-check-label question3" for="inlineCheckbox1">Gerald Ford</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" value="option2">
+                            <label class="form-check-label question3 question3-correct-answer" for="inlineCheckbox2">
+                                <strong>Richard Nixon</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" value="option3">
+                            <label class="form-check-label question3" for="inlineCheckbox2">Andrew Johnson</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" value="option4">
+                            <label class="form-check-label question3" for="inlineCheckbox2">Andrew Jackson</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">4. To what prestigious job was President William Howard Taft appointed, after his one term as President?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" value="option1">
+                            <label class="form-check-label question4" for="inlineCheckbox1">Attorney General of the US</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" value="option2">
+                            <label class="form-check-label question4" for="inlineCheckbox2">Postmaster General of the US</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" value="option3">
+                            <label class="form-check-label question4" for="inlineCheckbox3">National Dog Catcher of the US</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" value="option4">
+                            <label class="form-check-label question4 question4-correct-answer" for="inlineCheckbox4">
+                                <strong>Chief Justice of the Supreme Court</strong>
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">5. What is the most common first name of all 45 US Presidents?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" value="option1">
+                            <label class="form-check-label question5 question5-correct-answer" for="inlineCheckbox1">
+                                <strong>James</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" value="option2">
+                            <label class="form-check-label question5" for="inlineCheckbox2">William</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" value="option3">
+                            <label class="form-check-label question5" for="inlineCheckbox3">Donald</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" value="option4">
+                            <label class="form-check-label question5" for="inlineCheckbox4">George</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">6. Which US President was the youngest at the time of his inauguration?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" value="option1">
+                            <label class="form-check-label question6-correct-answer" for="inlineCheckbox1">George Washington</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" value="option2">
+                            <label class="form-check-label question6" for="inlineCheckbox2">William McKinley</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" value="option3">
+                            <label class="form-check-label question6" for="inlineCheckbox3">
+                                <strong>Theodore Roosevelt</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" value="option4">
+                            <label class="form-check-label question6" for="inlineCheckbox4">Ulysses S. Grant</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">7. George Washington, Thomas Jefferson, James Madison, and James Monroe were all from which state?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" value="option1">
+                            <label class="form-check-label question7" for="inlineCheckbox1">George Washington</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" value="option2">
+                            <label class="form-check-label question7" for="inlineCheckbox2">Georgia</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" value="option3">
+                            <label class="form-check-label question7-correct-answer" for="inlineCheckbox3">
+                                <strong>Virginia</strong>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" value="option4">
+                            <label class="form-check-label question7" for="inlineCheckbox4">Pennsylvania</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="question1">8. Which of the following Presidents was NOT assassinated during his time as President?</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" value="option1">
+                            <label class="form-check-label question8" for="inlineCheckbox1">Abraham Lincoln</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" value="option2">
+                            <label class="form-check-label question8" for="inlineCheckbox2">James Garfield</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" value="option3">
+                            <label class="form-check-label question8" for="inlineCheckbox3">John F. Kennedy</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" value="option4">
+                            <label class="form-check-label question8 question8-correct-answer" for="inlineCheckbox4">
+                                <strong>Franklin Roosevelt</strong>
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="done-button">
+                            <button type="button" class="btn btn-danger end-game-button">Done!</button>
+                        </div>
 
-                </form>
+                    </form>
+                </div>
+                <!-- HIDDEN BLOCK UNTIL GAME ENDS-->
+                <div class="end-game-scores scores">
+                    <h1>You finished the game!</h1>
+
+                </div>
             </div>
         </div>
     </div>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- <audio src="assets/sounds/start.mp3"></audio> -->
